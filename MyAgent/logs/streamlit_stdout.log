@@ -1,0 +1,83 @@
+
+  You can now view your Streamlit app in your browser.
+
+  URL: http://127.0.0.1:8501
+
+────────────────────── Traceback (most recent call last) ───────────────────────
+  D:\anaconda3\Lib\site-packages\streamlit\runtime\scriptrunner\exec_code.py:1  
+  21 in exec_func_with_error_handling                                           
+                                                                                
+  D:\anaconda3\Lib\site-packages\streamlit\runtime\scriptrunner\script_runner.  
+  py:645 in code_to_exec                                                        
+                                                                                
+  D:\LeetCode_100\zhisaotong-Agent-master\zhisaotong-Agent-master\app.py:4 in   
+  <module>                                                                      
+                                                                                
+     1 import time                                                              
+     2                                                                          
+     3 import streamlit as st                                                   
+  >  4 from agent.react_agent import ReactAgent                                 
+     5                                                                          
+     6 # 标题                                                                   
+     7 st.title("智扫通机器人智能客服")                                         
+                                                                                
+  D:\LeetCode_100\zhisaotong-Agent-master\zhisaotong-Agent-master\agent\react_  
+  agent.py:1 in <module>                                                        
+                                                                                
+  >  1 from langchain.agents import create_agent                                
+     2 from langchain_core.messages import AIMessage                            
+     3 from model.factory import chat_model                                     
+     4 from utils.prompt_loader import load_system_prompts                      
+                                                                                
+  D:\anaconda3\Lib\site-packages\langchain\agents\__init__.py:3 in <module>     
+                                                                                
+     1 """Entrypoint to building [Agents](https://docs.langchain.com/oss/pytho  
+     2                                                                          
+  >  3 from langchain.agents.factory import create_agent                        
+     4 from langchain.agents.middleware.types import AgentState                 
+     5                                                                          
+     6 __all__ = [                                                              
+                                                                                
+  D:\anaconda3\Lib\site-packages\langchain\agents\factory.py:24 in <module>     
+                                                                                
+      21 from langgraph._internal._runnable import RunnableCallable             
+      22 from langgraph.constants import END, START                             
+      23 from langgraph.graph.state import StateGraph                           
+  >   24 from langgraph.prebuilt.tool_node import ToolCallWithContext, ToolNod  
+      25 from langgraph.types import Command, Send                              
+      26 from typing_extensions import NotRequired, Required, TypedDict         
+      27                                                                        
+                                                                                
+  D:\anaconda3\Lib\site-packages\langgraph\prebuilt\__init__.py:3 in <module>   
+                                                                                
+     1 """langgraph.prebuilt exposes a higher-level API for creating and execu  
+     2                                                                          
+  >  3 from langgraph.prebuilt.chat_agent_executor import create_react_agent    
+     4 from langgraph.prebuilt.tool_node import (                               
+     5 │   InjectedState,                                                       
+     6 │   InjectedStore,                                                       
+                                                                                
+  D:\anaconda3\Lib\site-packages\langgraph\prebuilt\chat_agent_executor.py:47   
+  in <module>                                                                   
+                                                                                
+      44 from pydantic import BaseModel                                         
+      45 from typing_extensions import NotRequired, TypedDict, deprecated       
+      46                                                                        
+  >   47 from langgraph.prebuilt.tool_node import ToolCallWithContext, ToolNod  
+      48                                                                        
+      49 StructuredResponse = dict | BaseModel                                  
+      50 StructuredResponseSchema = dict | type[BaseModel]                      
+                                                                                
+  D:\anaconda3\Lib\site-packages\langgraph\prebuilt\tool_node.py:88 in          
+  <module>                                                                      
+                                                                                
+      85 from langgraph._internal._runnable import RunnableCallable             
+      86 from langgraph.errors import GraphBubbleUp                             
+      87 from langgraph.graph.message import REMOVE_ALL_MESSAGES                
+  >   88 from langgraph.runtime import ExecutionInfo, ServerInfo  # noqa: TC00  
+      89 from langgraph.store.base import BaseStore  # noqa: TC002              
+      90 from langgraph.types import Command, Send, StreamWriter                
+      91 from pydantic import BaseModel, ValidationError                        
+────────────────────────────────────────────────────────────────────────────────
+ImportError: cannot import name 'ExecutionInfo' from 'langgraph.runtime' 
+(D:\anaconda3\Lib\site-packages\langgraph\runtime.py)

@@ -1,0 +1,14 @@
+2026-09-14 14:51:26,163 - agent - INFO - middleware.py:52 - [log_before_model]即将调用模型，带有1条消息。
+2026-09-14 14:51:26,166 - agent - DEBUG - middleware.py:55 - [log_before_model]HumanMessage | 你好
+2026-09-14 15:00:54,339 - agent - INFO - middleware.py:52 - [log_before_model]即将调用模型，带有1条消息。
+2026-09-14 15:00:54,343 - agent - DEBUG - middleware.py:55 - [log_before_model]HumanMessage | 成都天气
+2026-09-14 15:00:56,968 - agent - INFO - middleware.py:21 - [tool monitor]执行工具：get_weather
+2026-09-14 15:00:56,971 - agent - INFO - middleware.py:23 - [tool monitor]传入参数：{'city': '成都'}
+2026-09-14 15:00:57,340 - agent - INFO - middleware.py:29 - [tool monitor]工具get_weather调用成功
+2026-09-14 15:00:57,342 - agent - INFO - middleware.py:52 - [log_before_model]即将调用模型，带有3条消息。
+2026-09-14 15:00:57,343 - agent - DEBUG - middleware.py:55 - [log_before_model]ToolMessage | 城市成都市天气为阴，气温20摄氏度，空气湿度100%，北风≤3级，数据发布时间2026-09-14 14:36:14。
+2026-09-14 15:01:00,835 - agent - INFO - middleware.py:21 - [tool monitor]执行工具：rag_summarize
+2026-09-14 15:01:00,838 - agent - INFO - middleware.py:23 - [tool monitor]传入参数：{'query': '高湿度环境扫地机器人使用注意事项'}
+2026-09-14 15:01:02,456 - agent - INFO - middleware.py:29 - [tool monitor]工具rag_summarize调用成功
+2026-09-14 15:01:02,459 - agent - INFO - middleware.py:52 - [log_before_model]即将调用模型，带有5条消息。
+2026-09-14 15:01:02,460 - agent - DEBUG - middleware.py:55 - [log_before_model]ToolMessage | 提供的参考资料为空，无法为您总结高湿度环境扫地机器人的使用注意事项。

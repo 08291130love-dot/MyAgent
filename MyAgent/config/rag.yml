@@ -1,0 +1,4 @@
+# Agent 需要稳定支持文本生成与工具调用的模型；qwen3.8-max 为多模态模型，
+# 通过 ChatTongyi 的文本工具调用链会返回 "url error"。
+chat_model_name: qwen3.8-max
+embedding_model_name: text-embedding-v4
