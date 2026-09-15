@@ -288,31 +288,6 @@ k: 3
 
 ---
 
-## 🔒 GitHub 提交建议
-
-建议在 `.gitignore` 中忽略：
-
-```gitignore
-.venv/
-.venv-repaired/
-.idea/
-__pycache__/
-*.py[cod]
-logs/
-chroma_db/
-md5.text
-.env
-.env.*
-```
-
-提交前请检查：
-
-- 不提交 DashScope、高德等真实 API Key；
-- 不提交本地虚拟环境、日志和向量库缓存；
-- 确保 `README.md` 中的 GitHub 地址换成自己的仓库地址。
-
----
-
 ## 🔮 可继续优化的方向
 
 - 使用真实登录态替换随机用户 ID 与随机月份；
